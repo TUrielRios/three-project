@@ -4,101 +4,157 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeff's Website</title>
+    <title>Tiziano's Website</title>
+    <style>
+      @import url("https://use.typekit.net/jmk3xov.css");
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #121212;
+        color: white;
+      }
+
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      :root {
+        --dark-bg: rgba(15, 15, 15, 0.95);
+        --spacing: 350px;
+        --primary-color: #ffb01c;
+        --secondary-color: #ec1d2a;
+        --font-family-main: 'Poppins', sans-serif;
+      }
+
+      main {
+        width: 100%;
+        z-index: 99;
+        position: relative;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr min(60ch, calc(100% - 4rem)) 1fr;
+      }
+
+      main > * {
+        grid-column: 2;
+      }
+
+      header {
+        background: var(--dark-bg);
+        font-size: 2.5rem;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      h1 {
+        color: var(--primary-color);
+        margin: 0;
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin: 1rem 0;
+      }
+
+      blockquote {
+        margin: 0;
+        padding: 2rem;
+        background: var(--dark-bg);
+        border-left: 5px solid var(--primary-color);
+        font-size: 1.5rem;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      section {
+        background: var(--dark-bg);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h2 {
+        color: var(--secondary-color);
+        font-size: 2rem;
+        margin-top: 0;
+      }
+
+      .left {
+        text-align: left;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
-
     <canvas id="bg"></canvas>   
-
     <main>
-
       <header>
-        <h1>Jeff Delaney</h1>
+        <h1>Tiziano Rios</h1>
         <p>🚀 Welcome to my website!</p>
       </header>
-
-
       <blockquote>
         <p>I like making stuff and putting it on the internet</p>
       </blockquote>
-
       <section>
-        <h2>📜 Manifesto</h2>
+        <h2>📜 About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hi, I'm Tiziano Rios, a programmer with 2 years of experience. I specialize in JavaScript, React, Node.js, Python, PHP, mobile applications, and web development.
         </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
       </section>
-
       <section class="light">
-        <h2>👩🏽‍🚀 Projects</h2>
-
+        <h2>👨‍💻 Projects</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Throughout my career, I have worked on numerous projects involving web and mobile applications, utilizing various technologies such as JavaScript, React, Node.js, Python, and PHP. My projects range from small business websites to full-fledged mobile applications.
         </p>
-
         <h2>🏆 Accomplishments</h2>
-
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I have successfully completed several projects, including a mobile app for cocktails preparation, an arquitectural studio web application, and more. I take pride in delivering high-quality code and innovative solutions.
         </p>
-
       </section>
-
       <blockquote>
         <p>The best way out is always through <br>-Robert Frost</p>
       </blockquote>
-
       <section class="left">
-        <h2>🌮 Work History</h2>
-
-        <h3>McDonalds</h3>
+        <h2>💼 Work History</h2>
+        <h3>Freelance Developer</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          As a freelance developer, I have worked with various clients on diverse projects, providing custom solutions and improving existing systems.
         </p>
-        <h3>Burger King</h3>
+        <h3>Software Engineer at Dharma Digital Marketing</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          At Dharam, I worked on a team responsible for developing and maintaining web applications, ensuring seamless user experiences and robust back-end systems.
         </p>
-        <h3>Taco Bell</h3>
+        <h3>Full stack developer at Defrancisco Studio</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          During my work at Defrancisco, I gained valuable experience in software development, contributing to a big project on my own and honing my skills in multiple programming languages.
         </p>
-
       </section>
-
       <blockquote>
-        <p>Thanks for watching!</p>
+        <p>Thanks for visiting!</p>
       </blockquote>
-
-
     </main>
-    
     <script type="module" src="/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
